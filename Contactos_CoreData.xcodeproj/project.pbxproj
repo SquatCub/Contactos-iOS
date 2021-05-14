@@ -13,6 +13,8 @@
 		ACB8DD05264E02C10037BADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB8DD03264E02C10037BADD /* Main.storyboard */; };
 		ACB8DD07264E02C20037BADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB8DD06264E02C20037BADD /* Assets.xcassets */; };
 		ACB8DD0A264E02C20037BADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB8DD08264E02C20037BADD /* LaunchScreen.storyboard */; };
+		ACB8DD14264E09E00037BADD /* ContactoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8DD12264E09E00037BADD /* ContactoTableViewCell.swift */; };
+		ACB8DD15264E09E00037BADD /* ContactoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB8DD13264E09E00037BADD /* ContactoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		ACB8DD06264E02C20037BADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB8DD09264E02C20037BADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACB8DD0B264E02C20037BADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB8DD12264E09E00037BADD /* ContactoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoTableViewCell.swift; sourceTree = "<group>"; };
+		ACB8DD13264E09E00037BADD /* ContactoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				ACB8DD06264E02C20037BADD /* Assets.xcassets */,
 				ACB8DD08264E02C20037BADD /* LaunchScreen.storyboard */,
 				ACB8DD0B264E02C20037BADD /* Info.plist */,
+				ACB8DD12264E09E00037BADD /* ContactoTableViewCell.swift */,
+				ACB8DD13264E09E00037BADD /* ContactoTableViewCell.xib */,
 			);
 			path = Contactos_CoreData;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB8DD15264E09E00037BADD /* ContactoTableViewCell.xib in Resources */,
 				ACB8DD0A264E02C20037BADD /* LaunchScreen.storyboard in Resources */,
 				ACB8DD07264E02C20037BADD /* Assets.xcassets in Resources */,
 				ACB8DD05264E02C10037BADD /* Main.storyboard in Resources */,
@@ -137,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB8DD14264E09E00037BADD /* ContactoTableViewCell.swift in Sources */,
 				ACB8DD02264E02C10037BADD /* ViewController.swift in Sources */,
 				ACB8DCFE264E02C10037BADD /* AppDelegate.swift in Sources */,
 				ACB8DD00264E02C10037BADD /* SceneDelegate.swift in Sources */,
