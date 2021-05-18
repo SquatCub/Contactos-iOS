@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC01AC6E264E152F00700CD8 /* MiContacto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01AC6D264E152F00700CD8 /* MiContacto.swift */; };
 		AC01AC71264E1CE700700CD8 /* EditarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01AC70264E1CE700700CD8 /* EditarViewController.swift */; };
+		AC9CC6A2265360B900946D0D /* Contacto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC9CC6A0265360B900946D0D /* Contacto.xcdatamodeld */; };
 		ACB8DCFE264E02C10037BADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8DCFD264E02C10037BADD /* AppDelegate.swift */; };
 		ACB8DD00264E02C10037BADD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8DCFF264E02C10037BADD /* SceneDelegate.swift */; };
 		ACB8DD02264E02C10037BADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8DD01264E02C10037BADD /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		AC01AC6D264E152F00700CD8 /* MiContacto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiContacto.swift; sourceTree = "<group>"; };
 		AC01AC70264E1CE700700CD8 /* EditarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarViewController.swift; sourceTree = "<group>"; };
+		AC9CC6A1265360B900946D0D /* Contacto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Contacto.xcdatamodel; sourceTree = "<group>"; };
 		ACB8DCFA264E02C10037BADD /* Contactos_CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contactos_CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB8DCFD264E02C10037BADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACB8DCFF264E02C10037BADD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				ACB8DD13264E09E00037BADD /* ContactoTableViewCell.xib */,
 				AC01AC6D264E152F00700CD8 /* MiContacto.swift */,
 				AC01AC70264E1CE700700CD8 /* EditarViewController.swift */,
+				AC9CC6A0265360B900946D0D /* Contacto.xcdatamodeld */,
 			);
 			path = Contactos_CoreData;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB8DD14264E09E00037BADD /* ContactoTableViewCell.swift in Sources */,
+				AC9CC6A2265360B900946D0D /* Contacto.xcdatamodeld in Sources */,
 				ACB8DD02264E02C10037BADD /* ViewController.swift in Sources */,
 				AC01AC6E264E152F00700CD8 /* MiContacto.swift in Sources */,
 				ACB8DCFE264E02C10037BADD /* AppDelegate.swift in Sources */,
@@ -357,6 +361,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC9CC6A0265360B900946D0D /* Contacto.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC9CC6A1265360B900946D0D /* Contacto.xcdatamodel */,
+			);
+			currentVersion = AC9CC6A1265360B900946D0D /* Contacto.xcdatamodel */;
+			path = Contacto.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ACB8DCF2264E02C10037BADD /* Project object */;
 }

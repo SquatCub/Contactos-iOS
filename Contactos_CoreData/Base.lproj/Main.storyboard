@@ -49,47 +49,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lXU-3R-DT9">
-                                <rect key="frame" x="35" y="97" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TlT-ew-rZG">
-                                <rect key="frame" x="35" y="138" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLK-aP-Mg1">
-                                <rect key="frame" x="35" y="194" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAw-rE-ddE">
-                                <rect key="frame" x="39" y="494" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cancelar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1d2-p9-gVj">
-                                <rect key="frame" x="231" y="494" width="56" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Guardar"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2021-05-13 at 20.34.36" translatesAutoresizingMaskIntoConstraints="NO" id="rkG-6d-14c">
-                                <rect key="frame" x="16" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="sAR-zo-FnN">
+                                <rect key="frame" x="63" y="116" width="249" height="252"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="a6O-sb-dDn">
+                                        <rect key="frame" x="24.5" y="0.0" width="200" height="252"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="VRX-Xy-qLk">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="136"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lXU-3R-DT9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="U1N-L1-dRp"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TlT-ew-rZG">
+                                                        <rect key="frame" x="0.0" y="51" width="200" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="dQg-N6-f8x"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLK-aP-Mg1">
+                                                        <rect key="frame" x="0.0" y="102" width="200" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="nL0-3z-b18"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2021-05-13 at 20.34.36" translatesAutoresizingMaskIntoConstraints="NO" id="rkG-6d-14c">
+                                                <rect key="frame" x="50" y="152" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="S1v-3z-G5T"/>
+                                                    <constraint firstAttribute="height" constant="100" id="rdZ-Wo-clL"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="eD3-YA-rIv">
+                                <rect key="frame" x="79" y="448" width="217" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAw-rE-ddE">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
+                                        <color key="tintColor" red="0.84081535529999996" green="0.37514950720000001" blue="0.13822346620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Cancelar"/>
+                                        <connections>
+                                            <action selector="calcelarBtn:" destination="5Mw-QG-P2R" eventType="touchUpInside" id="Xgv-aM-XDm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1d2-p9-gVj">
+                                        <rect key="frame" x="161" y="0.0" width="56" height="30"/>
+                                        <color key="tintColor" systemColor="linkColor"/>
+                                        <state key="normal" title="Guardar"/>
+                                        <connections>
+                                            <action selector="guardarBtn:" destination="5Mw-QG-P2R" eventType="touchUpInside" id="jRA-n0-Tdh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pk2-dZ-kLm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sAR-zo-FnN" firstAttribute="leading" secondItem="pk2-dZ-kLm" secondAttribute="leading" constant="63" id="Qnq-ih-fNP"/>
+                            <constraint firstItem="sAR-zo-FnN" firstAttribute="centerX" secondItem="YJL-x5-rt2" secondAttribute="centerX" id="ULe-dn-Ght"/>
+                            <constraint firstItem="eD3-YA-rIv" firstAttribute="top" secondItem="sAR-zo-FnN" secondAttribute="bottom" constant="80" id="V9R-jt-YFd"/>
+                            <constraint firstItem="sAR-zo-FnN" firstAttribute="top" secondItem="pk2-dZ-kLm" secondAttribute="top" constant="20" id="hdn-46-9po"/>
+                            <constraint firstItem="eD3-YA-rIv" firstAttribute="centerX" secondItem="sAR-zo-FnN" secondAttribute="centerX" id="rn3-Ap-zmt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Editar contacto" id="4P5-pk-k60">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="camera.fill" catalog="system" id="xXM-FV-0NV"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="camera.fill" catalog="system" id="xXM-FV-0NV">
+                            <connections>
+                                <action selector="tomarFoto:" destination="5Mw-QG-P2R" id="osW-Zx-epV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="direccionTextField" destination="JLK-aP-Mg1" id="iR8-bt-szH"/>
+                        <outlet property="imagenContacto" destination="rkG-6d-14c" id="HT5-j1-BQY"/>
                         <outlet property="nombreTextField" destination="lXU-3R-DT9" id="9Xw-Wd-XXp"/>
+                        <outlet property="telefonoTextField" destination="TlT-ew-rZG" id="o5b-eX-Qja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5UO-kS-vJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -119,6 +168,9 @@
         <image name="Screen Shot 2021-05-13 at 20.34.36" width="338" height="384"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
