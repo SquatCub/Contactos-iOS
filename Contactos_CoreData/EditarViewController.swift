@@ -36,6 +36,7 @@ class EditarViewController: UIViewController {
         telefonoTextField.text = "\(recibirTelefono!)"
         direccionTextField.text = recibirDireccion
         imagenContacto.image = UIImage(data: contactos[recibirIndice!].imagen!)
+        imagenContacto.layer.cornerRadius = 50
         
         //MARK.-Agregar gestura a la imagen
         let gestura = UITapGestureRecognizer(target: self, action: #selector(clickImagen))
@@ -46,6 +47,10 @@ class EditarViewController: UIViewController {
         imagenContacto.addGestureRecognizer(gestura)
         imagenContacto.isUserInteractionEnabled = true
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @objc func clickImagen(gestura: UITapGestureRecognizer) {

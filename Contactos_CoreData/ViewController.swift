@@ -121,10 +121,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         celda.nombreLabel.text = contactos[indexPath.row].nombre
         celda.telefonoLabel.text = "📞 \(contactos[indexPath.row].telefono)"
         celda.contactoImagen.image = UIImage(data: contactos[indexPath.row].imagen!)
+        
         return celda
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 90
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tablaContactos.deselectRow(at: indexPath, animated: true)

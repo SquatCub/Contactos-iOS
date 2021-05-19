@@ -22,6 +22,7 @@ class ContactoTableViewCell: UITableViewCell {
         backView.layer.shadowOpacity = 0.5
         backView.layer.shadowOffset = .zero
         backView.layer.shadowRadius = 5
+        contactoImagen.layer.cornerRadius = 25
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
