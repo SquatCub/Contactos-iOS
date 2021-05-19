@@ -119,9 +119,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tablaContactos.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ContactoTableViewCell
         celda.nombreLabel.text = contactos[indexPath.row].nombre
-        celda.telefonoLabel.text = "☏ \(contactos[indexPath.row].telefono)"
+        celda.telefonoLabel.text = "📞 \(contactos[indexPath.row].telefono)"
         celda.contactoImagen.image = UIImage(data: contactos[indexPath.row].imagen!)
         return celda
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tablaContactos.deselectRow(at: indexPath, animated: true)
