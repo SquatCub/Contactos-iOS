@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var nombreEnviar: String?
     var telefonoEnviar: Int64?
     var direccionEnviar: String?
+    var correoEnviar: String?
     var indice: Int?
     
     //Arreglo de contactos
@@ -53,7 +54,10 @@ class ViewController: UIViewController {
             numero.keyboardType = .numberPad
         }
         alerta.addTextField { (direccion) in
-            direccion.placeholder = "Direccion "
+            direccion.placeholder = "Direccion"
+        }
+        alerta.addTextField { (correo) in
+            correo.placeholder = "Correo"
         }
         
         //Creacion de las acciones
@@ -61,7 +65,8 @@ class ViewController: UIViewController {
             //Obtencion de los textfields de la alerta para ser usados al crear contacto
             guard let nombreAlerta = alerta.textFields?.first?.text else { return }
             guard let telefonoAlerta = Int64(alerta.textFields?[1].text ?? "0000000000") else { return }
-            guard let direccionAlerta = alerta.textFields?.last?.text else { return }
+            guard let direccionAlerta = alerta.textFields?[2].text else { return }
+            guard let correoAlerta = alerta.textFields?.last?.text else { return }
             //Imagen temportal
             let imagenTemporal = UIImageView(image: #imageLiteral(resourceName: "Screen Shot 2021-05-13 at 20.34.36"))
             
@@ -71,6 +76,8 @@ class ViewController: UIViewController {
             nuevoContacto.nombre = nombreAlerta
             nuevoContacto.telefono = telefonoAlerta
             nuevoContacto.direccion = direccionAlerta
+            nuevoContacto.correo = correoAlerta
+            
             nuevoContacto.imagen = imagenTemporal.image?.pngData()
             //Metodo guardar
             self.guardarContacto()
@@ -132,6 +139,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         nombreEnviar = contactos[indexPath.row].nombre
         telefonoEnviar = contactos[indexPath.row].telefono
         direccionEnviar = contactos[indexPath.row].direccion
+        correoEnviar = contactos[indexPath.row].correo
         indice = indexPath.row
         performSegue(withIdentifier: "editarContacto", sender: self)
     }
@@ -141,6 +149,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             objEditar.recibirNombre = nombreEnviar
             objEditar.recibirTelefono = telefonoEnviar
             objEditar.recibirDireccion = direccionEnviar
+            objEditar.recibirCorreo = correoEnviar
             objEditar.recibirIndice = indice
         }
     }

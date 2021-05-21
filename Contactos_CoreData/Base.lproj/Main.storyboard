@@ -41,7 +41,7 @@
             </objects>
             <point key="canvasLocation" x="967.20000000000005" y="90.404797601199405"/>
         </scene>
-        <!--Editar contacto-->
+        <!--Ver contacto-->
         <scene sceneID="qlB-af-N8D">
             <objects>
                 <viewController id="5Mw-QG-P2R" customClass="EditarViewController" customModule="Contactos_CoreData" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,10 +50,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="sAR-zo-FnN">
-                                <rect key="frame" x="63" y="116" width="249" height="252"/>
+                                <rect key="frame" x="63" y="116" width="249" height="426"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="a6O-sb-dDn">
-                                        <rect key="frame" x="24.5" y="0.0" width="200" height="252"/>
+                                        <rect key="frame" x="24.5" y="0.0" width="200" height="426"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2021-05-13 at 20.34.36" translatesAutoresizingMaskIntoConstraints="NO" id="rkG-6d-14c">
                                                 <rect key="frame" x="50" y="0.0" width="100" height="100"/>
@@ -63,7 +63,7 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="VRX-Xy-qLk">
-                                                <rect key="frame" x="0.0" y="116" width="200" height="136"/>
+                                                <rect key="frame" x="0.0" y="116" width="200" height="310"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lXU-3R-DT9">
                                                         <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
@@ -89,6 +89,40 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dhR-Ii-oYC">
+                                                        <rect key="frame" x="0.0" y="153" width="200" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zq6-RN-oBu">
+                                                        <rect key="frame" x="0.0" y="204" width="200" height="106"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIV-dT-pho">
+                                                                <rect key="frame" x="0.0" y="0.0" width="200" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefono" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flA-8b-iiv">
+                                                                <rect key="frame" x="0.0" y="28.5" width="200" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direccion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQT-7K-1yn">
+                                                                <rect key="frame" x="0.0" y="57" width="200" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b95-aQ-mYt">
+                                                                <rect key="frame" x="0.0" y="85.5" width="200" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -96,7 +130,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="eD3-YA-rIv">
-                                <rect key="frame" x="79" y="448" width="217" height="30"/>
+                                <rect key="frame" x="79" y="622" width="217" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAw-rE-ddE">
                                         <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
@@ -127,17 +161,24 @@
                             <constraint firstItem="eD3-YA-rIv" firstAttribute="centerX" secondItem="sAR-zo-FnN" secondAttribute="centerX" id="rn3-Ap-zmt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Editar contacto" id="4P5-pk-k60">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="camera.fill" catalog="system" id="xXM-FV-0NV">
+                    <navigationItem key="navigationItem" title="Ver contacto" id="4P5-pk-k60">
+                        <barButtonItem key="rightBarButtonItem" title="Editar" id="xXM-FV-0NV">
                             <connections>
-                                <action selector="tomarFoto:" destination="5Mw-QG-P2R" id="osW-Zx-epV"/>
+                                <action selector="editarBtn:" destination="5Mw-QG-P2R" id="uap-za-OWY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cancelarBtn" destination="UAw-rE-ddE" id="DV0-NZ-cL5"/>
+                        <outlet property="correoLabel" destination="b95-aQ-mYt" id="7Xe-2W-mcJ"/>
+                        <outlet property="correoTextField" destination="dhR-Ii-oYC" id="ylB-6n-aBw"/>
+                        <outlet property="direccionLabel" destination="uQT-7K-1yn" id="wWd-IT-DgQ"/>
                         <outlet property="direccionTextField" destination="JLK-aP-Mg1" id="iR8-bt-szH"/>
+                        <outlet property="guardarBtn" destination="1d2-p9-gVj" id="m7H-Hc-A8a"/>
                         <outlet property="imagenContacto" destination="rkG-6d-14c" id="HT5-j1-BQY"/>
+                        <outlet property="nombreLabel" destination="UIV-dT-pho" id="Ryj-jM-6r7"/>
                         <outlet property="nombreTextField" destination="lXU-3R-DT9" id="9Xw-Wd-XXp"/>
+                        <outlet property="telefonoLabel" destination="flA-8b-iiv" id="ybi-LP-nXf"/>
                         <outlet property="telefonoTextField" destination="TlT-ew-rZG" id="o5b-eX-Qja"/>
                     </connections>
                 </viewController>
@@ -166,7 +207,6 @@
     </scenes>
     <resources>
         <image name="Screen Shot 2021-05-13 at 20.34.36" width="338" height="384"/>
-        <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

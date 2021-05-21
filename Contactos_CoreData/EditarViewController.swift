@@ -20,32 +20,28 @@ class EditarViewController: UIViewController {
     var recibirNombre: String?
     var recibirTelefono: Int64?
     var recibirDireccion: String?
+    var recibirCorreo: String?
     var recibirIndice: Int?
     
     //Outlets
     @IBOutlet weak var nombreTextField: UITextField!
     @IBOutlet weak var telefonoTextField: UITextField!
     @IBOutlet weak var direccionTextField: UITextField!
+    @IBOutlet weak var correoTextField: UITextField!
     @IBOutlet weak var imagenContacto: UIImageView!
+    
+    @IBOutlet weak var nombreLabel: UILabel!
+    @IBOutlet weak var telefonoLabel: UILabel!
+    @IBOutlet weak var direccionLabel: UILabel!
+    @IBOutlet weak var correoLabel: UILabel!
+    
+    @IBOutlet weak var guardarBtn: UIButton!
+    @IBOutlet weak var cancelarBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         cargarCoreData()
-        nombreTextField.text = recibirNombre
-        telefonoTextField.text = "\(recibirTelefono!)"
-        direccionTextField.text = recibirDireccion
-        imagenContacto.image = UIImage(data: contactos[recibirIndice!].imagen!)
-        imagenContacto.layer.cornerRadius = 50
-        
-        //MARK.-Agregar gestura a la imagen
-        let gestura = UITapGestureRecognizer(target: self, action: #selector(clickImagen))
-        gestura.numberOfTapsRequired = 1
-        gestura.numberOfTouchesRequired = 1
-        
-        //Agregar gestura a la imagen
-        imagenContacto.addGestureRecognizer(gestura)
-        imagenContacto.isUserInteractionEnabled = true
+        inicializarOutlets()
         
     }
     
@@ -71,17 +67,32 @@ class EditarViewController: UIViewController {
             print("Error al cargar datos del CoreData: \(error.localizedDescription)")
         }
     }
-
-
-    @IBAction func tomarFoto(_ sender: UIBarButtonItem) {
-        let vc = UIImagePickerController()
-        vc.sourceType = .photoLibrary
-        vc.delegate = self
-        vc.allowsEditing = true
-        present(vc, animated: true, completion: nil)
+    @IBAction func editarBtn(_ sender: Any) {
+        guardarBtn.isHidden = false
+        cancelarBtn.isHidden = false
+        
+        nombreTextField.isHidden = false
+        telefonoTextField.isHidden = false
+        direccionTextField.isHidden = false
+        correoTextField.isHidden = false
+        
+        nombreLabel.isHidden = true
+        telefonoLabel.isHidden = true
+        direccionLabel.isHidden = true
+        correoLabel.isHidden = true
+        
+        //MARK.-Agregar gestura a la imagen
+        let gestura = UITapGestureRecognizer(target: self, action: #selector(clickImagen))
+        gestura.numberOfTapsRequired = 1
+        gestura.numberOfTouchesRequired = 1
+        
+        //Agregar gestura a la imagen
+        imagenContacto.addGestureRecognizer(gestura)
+        imagenContacto.isUserInteractionEnabled = true
     }
+    
     @IBAction func calcelarBtn(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+        inicializarOutlets()
     }
     @IBAction func guardarBtn(_ sender: UIButton) {
         do {
@@ -95,6 +106,32 @@ class EditarViewController: UIViewController {
             print("Error al editar \(error.localizedDescription)")
         }
         navigationController?.popViewController(animated: true)
+    }
+    
+    func inicializarOutlets() {
+        nombreLabel.text = "Nombre: \(recibirNombre!)"
+        telefonoLabel.text = "Telefono: \(recibirTelefono!)"
+        direccionLabel.text = "Direccion: \(recibirDireccion!)"
+        correoLabel.text = "Correo: \(recibirCorreo!)"
+        nombreTextField.text = "\(recibirNombre!)"
+        telefonoTextField.text = "\(recibirTelefono!)"
+        direccionTextField.text = "\(recibirDireccion!)"
+        correoTextField.text = "\(recibirCorreo!)"
+        imagenContacto.image = UIImage(data: contactos[recibirIndice!].imagen!)
+        imagenContacto.layer.cornerRadius = 50
+        
+        nombreLabel.isHidden = false
+        telefonoLabel.isHidden = false
+        direccionLabel.isHidden = false
+        correoLabel.isHidden = false
+        
+        nombreTextField.isHidden = true
+        telefonoTextField.isHidden = true
+        direccionTextField.isHidden = true
+        correoTextField.isHidden = true
+        
+        guardarBtn.isHidden = true
+        cancelarBtn.isHidden = true
     }
 }
 
