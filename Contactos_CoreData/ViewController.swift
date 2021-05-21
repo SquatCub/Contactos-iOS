@@ -68,7 +68,7 @@ class ViewController: UIViewController {
             guard let direccionAlerta = alerta.textFields?[2].text else { return }
             guard let correoAlerta = alerta.textFields?.last?.text else { return }
             //Imagen temportal
-            let imagenTemporal = UIImageView(image: #imageLiteral(resourceName: "Screen Shot 2021-05-13 at 20.34.36"))
+            let imagenTemporal = UIImageView(image: #imageLiteral(resourceName: "icon"))
             
             // Cargar el objeto para guardar en CD
             //Creacion del contact
@@ -156,13 +156,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let accionBorrar = UIContextualAction(style: .normal, title: "") { (_, _, _) in
-            print("Borrar")
             //Eliminar de CD
             self.contexto.delete(self.contactos[indexPath.row])
             //Eliminar de la interfaz
             self.contactos.remove(at: indexPath.row)
             self.guardarContacto()
-            self.tablaContactos.reloadData()
+            self.tablaContactos.deleteRows(at: [indexPath], with: .fade)
+            //self.tablaContactos.reloadData()
         }
         accionBorrar.image = UIImage(named: "borrar.png")
         accionBorrar.backgroundColor = .red
