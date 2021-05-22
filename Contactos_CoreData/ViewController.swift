@@ -172,9 +172,23 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         //Creacion de los actions de derecha a izquierda
         let accionLlamada = UIContextualAction(style: .normal, title: "") { (_, _, _) in
             print("realizar llamada")
+            
+            guard let telefono = self.contactos[indexPath.row].value(forKey: "telefono") else {return}
+            
+            
+            if let phoneCallUrl = URL(string: "TEL://+52\(telefono)") {
+                let application:UIApplication = UIApplication.shared
+                if(application.canOpenURL(phoneCallUrl)) {
+                    application.open(phoneCallUrl, options: [:], completionHandler: nil)
+                }
+            }
         }
         let accionMensaje = UIContextualAction(style: .normal, title: "") { (_, _, _) in
-            print("Mensaje")
+            let telefono = "+52\(self.contactos[indexPath.row].value(forKey: "telefono")!)"
+            let nombre = self.contactos[indexPath.row].value(forKey: "nombre")
+            let sms: String = "sms:\(telefono)&body=Hola \(nombre!), te escribo desde la app de contactos"
+            let strURL: String = sms.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+            UIApplication.shared.open(URL.init(string: strURL)!, options: [:], completionHandler: nil)
         }
         //Asignando propiedades
         accionLlamada.image = UIImage(named: "llamada.png")

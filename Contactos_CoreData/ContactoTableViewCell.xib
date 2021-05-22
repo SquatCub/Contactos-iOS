@@ -10,43 +10,43 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="87" id="KGk-i7-Jjw" customClass="ContactoTableViewCell" customModule="Contactos_CoreData" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="397" height="87"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="97" id="KGk-i7-Jjw" customClass="ContactoTableViewCell" customModule="Contactos_CoreData" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="97"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="397" height="87"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="97"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Z9G-KY-Yqf" userLabel="Stack View Principal">
-                        <rect key="frame" x="0.0" y="5" width="397" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="107"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCI-l0-E87" userLabel="fondo">
-                                <rect key="frame" x="0.0" y="0.0" width="397" height="95"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCI-l0-E87" userLabel="fondo">
+                                <rect key="frame" x="5" y="5" width="343" height="97"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSN-V8-M7c" userLabel="backView">
-                                        <rect key="frame" x="10" y="5" width="377" height="80"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSN-V8-M7c" userLabel="backView">
+                                        <rect key="frame" x="5" y="5" width="333" height="80"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x32-5z-hSh" userLabel="Stack View Celda">
-                                                <rect key="frame" x="5" y="0.0" width="367" height="70"/>
+                                                <rect key="frame" x="10" y="0.0" width="323" height="70"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2021-05-13 at 20.34.36" translatesAutoresizingMaskIntoConstraints="NO" id="Dda-aq-xfO">
-                                                        <rect key="frame" x="0.0" y="20" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="15" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="Enn-7f-RSn"/>
                                                             <constraint firstAttribute="height" constant="50" id="XwM-C7-rA2"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MUM-pJ-g37" userLabel="Stack View Labels">
-                                                        <rect key="frame" x="60" y="20" width="307" height="40"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="MUM-pJ-g37" userLabel="Stack View Labels">
+                                                        <rect key="frame" x="60" y="15" width="263" height="45"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" ambiguous="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3b-sv-BBi">
-                                                                <rect key="frame" x="0.0" y="0.0" width="307" height="24"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3b-sv-BBi">
+                                                                <rect key="frame" x="0.0" y="0.0" width="263" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Telefono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zst-wi-lSZ">
-                                                                <rect key="frame" x="0.0" y="23" width="307" height="17"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zst-wi-lSZ">
+                                                                <rect key="frame" x="0.0" y="28" width="263" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -55,43 +55,46 @@
                                                     </stackView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="Dda-aq-xfO" secondAttribute="bottom" constant="20" id="Ebd-pb-wA6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="MUM-pJ-g37" secondAttribute="trailing" id="D5u-te-dtA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Dda-aq-xfO" secondAttribute="bottom" constant="30" id="Ebd-pb-wA6"/>
+                                                    <constraint firstItem="MUM-pJ-g37" firstAttribute="leading" secondItem="Dda-aq-xfO" secondAttribute="trailing" constant="10" id="OhX-Gc-HHd"/>
                                                     <constraint firstAttribute="bottom" secondItem="MUM-pJ-g37" secondAttribute="bottom" constant="10" id="Y5V-eO-kDf"/>
                                                     <constraint firstAttribute="height" constant="70" id="bmg-lO-WMQ"/>
-                                                    <constraint firstItem="Dda-aq-xfO" firstAttribute="top" secondItem="x32-5z-hSh" secondAttribute="top" constant="20" id="wDk-Zq-MPd"/>
+                                                    <constraint firstItem="Dda-aq-xfO" firstAttribute="top" secondItem="x32-5z-hSh" secondAttribute="top" constant="15" id="wDk-Zq-MPd"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="x32-5z-hSh" secondAttribute="trailing" constant="5" id="86W-hn-CAA"/>
-                                            <constraint firstItem="x32-5z-hSh" firstAttribute="leading" secondItem="oSN-V8-M7c" secondAttribute="leading" constant="5" id="d5M-0u-box"/>
-                                            <constraint firstAttribute="bottom" secondItem="x32-5z-hSh" secondAttribute="bottom" constant="10" id="f1x-No-7Y0"/>
-                                            <constraint firstItem="x32-5z-hSh" firstAttribute="top" secondItem="oSN-V8-M7c" secondAttribute="top" id="zXl-76-sFt"/>
+                                            <constraint firstAttribute="trailing" secondItem="x32-5z-hSh" secondAttribute="trailing" id="FIy-Jv-M6p"/>
+                                            <constraint firstAttribute="bottom" secondItem="x32-5z-hSh" secondAttribute="bottom" constant="10" id="Hl1-QB-PW7"/>
+                                            <constraint firstItem="x32-5z-hSh" firstAttribute="leading" secondItem="oSN-V8-M7c" secondAttribute="leading" constant="10" id="JCe-Lv-OKb"/>
+                                            <constraint firstItem="x32-5z-hSh" firstAttribute="top" secondItem="oSN-V8-M7c" secondAttribute="top" id="hrd-v5-7rk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="oSN-V8-M7c" secondAttribute="trailing" constant="10" id="53R-xr-lSg"/>
-                                    <constraint firstAttribute="bottom" secondItem="oSN-V8-M7c" secondAttribute="bottom" constant="10" id="fms-Pv-gd8"/>
-                                    <constraint firstItem="oSN-V8-M7c" firstAttribute="leading" secondItem="eCI-l0-E87" secondAttribute="leading" constant="10" id="oGW-81-SBp"/>
-                                    <constraint firstItem="oSN-V8-M7c" firstAttribute="top" secondItem="eCI-l0-E87" secondAttribute="top" constant="5" id="q49-FC-cHY"/>
+                                    <constraint firstAttribute="bottom" secondItem="oSN-V8-M7c" secondAttribute="bottom" constant="5" id="4xm-Gr-vJy"/>
+                                    <constraint firstItem="oSN-V8-M7c" firstAttribute="top" secondItem="eCI-l0-E87" secondAttribute="top" constant="5" id="AVm-JH-DcD"/>
+                                    <constraint firstAttribute="trailing" secondItem="oSN-V8-M7c" secondAttribute="trailing" constant="5" id="Cea-pL-f9a"/>
+                                    <constraint firstItem="oSN-V8-M7c" firstAttribute="leading" secondItem="eCI-l0-E87" secondAttribute="leading" constant="5" id="jtp-qg-BDF"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="eCI-l0-E87" secondAttribute="trailing" id="Sl7-dR-SfQ"/>
-                            <constraint firstItem="eCI-l0-E87" firstAttribute="top" secondItem="Z9G-KY-Yqf" secondAttribute="top" id="Wnl-uX-ef9"/>
-                            <constraint firstItem="eCI-l0-E87" firstAttribute="leading" secondItem="Z9G-KY-Yqf" secondAttribute="leading" id="ccd-T7-Jmb"/>
-                            <constraint firstAttribute="bottom" secondItem="eCI-l0-E87" secondAttribute="bottom" constant="5" id="ude-TX-adG"/>
+                            <constraint firstAttribute="trailing" secondItem="eCI-l0-E87" secondAttribute="trailing" constant="5" id="HxS-oF-u9V"/>
+                            <constraint firstItem="eCI-l0-E87" firstAttribute="top" secondItem="Z9G-KY-Yqf" secondAttribute="top" constant="5" id="NDS-E9-G2F"/>
+                            <constraint firstItem="eCI-l0-E87" firstAttribute="leading" secondItem="Z9G-KY-Yqf" secondAttribute="leading" constant="5" id="h1O-9n-EbC"/>
+                            <constraint firstAttribute="bottom" secondItem="eCI-l0-E87" secondAttribute="bottom" constant="5" id="o0f-vm-YVW"/>
                         </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Z9G-KY-Yqf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PgP-SN-wv9"/>
-                    <constraint firstItem="Z9G-KY-Yqf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fdF-Yy-yW1"/>
-                    <constraint firstAttribute="trailing" secondItem="Z9G-KY-Yqf" secondAttribute="trailing" id="uYe-Rf-sSC"/>
+                    <constraint firstItem="Z9G-KY-Yqf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Fqo-nY-HbM"/>
+                    <constraint firstAttribute="trailing" secondItem="Z9G-KY-Yqf" secondAttribute="trailing" constant="5" id="JQO-HY-xbQ"/>
+                    <constraint firstItem="Z9G-KY-Yqf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Yxj-tc-ojk"/>
+                    <constraint firstAttribute="bottom" secondItem="Z9G-KY-Yqf" secondAttribute="bottom" id="ZZk-Jw-v8E"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -101,7 +104,7 @@
                 <outlet property="nombreLabel" destination="h3b-sv-BBi" id="kp6-z4-vim"/>
                 <outlet property="telefonoLabel" destination="zst-wi-lSZ" id="lqi-k3-D9B"/>
             </connections>
-            <point key="canvasLocation" x="-21.014492753623191" y="147.65625"/>
+            <point key="canvasLocation" x="-49.275362318840585" y="151.00446428571428"/>
         </tableViewCell>
     </objects>
     <resources>
